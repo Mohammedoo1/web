@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my web</title>
+ 
+</head>  
+<body class="Home">
+  <header>
+    <nav>
+      <button onclick="showPage('about.html')">About</button>
+      <button onclick="showPage('conect.html')">Contact</button>
+    </nav>
+    <h2 class="h">Space World</h2> 
+  </header>
+  <iframe id="content"></iframe>
+
+  <script>
+        document.getElementById("content").style.display = "none";
+
+    function showPage(page) {
+      const frame = document.getElementById('content'); 
+    frame.src = page;
+    frame.style.display = "block"; 
+    const col=document.getElementById("color").style.display="block";
+
+    }
+    
+   function closeIframe() {
+    document.getElementById("content").style.display = "none";
+    document.getElementById("color").style.display = "none";
+
+  }
+  
+  </script>
+</body>
