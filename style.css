@@ -48,7 +48,7 @@ font-weight: 600;
   font-family: Arial;
   border: none;
   background-color: transparent ;
-    padding: 15px;
+padding: 1.5vw; 
 
 
 }#content {
@@ -68,8 +68,9 @@ font-weight: 600;
   backdrop-filter: blur(6px);
   inset: 0; 
   display: none;
-  z-index:5;
+  z-index:3;
 }
+
 
 
 
