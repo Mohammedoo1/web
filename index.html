@@ -6,7 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>my web</title>
- 
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 </head>  
 <body class="Home">
   <header>
@@ -14,11 +15,9 @@
     <nav>
       <button onclick="showPage('about.html')">About</button>
       <button onclick="showPage('conect.html')">Contact</button>
+       <button class="sign" onclick="window.netlifyIdentity.open()">sign/login</button>
+
     </nav>
-   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-
-  <button class="sign" onclick="window.netlifyIdentity.open()">sign/login</button>
 
     <h2 class="h">Space World</h2> 
   </header>
@@ -43,6 +42,7 @@
   
   </script>
 </body>
+
 
 
 
