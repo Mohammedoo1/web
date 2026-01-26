@@ -9,21 +9,12 @@ body.Home {
   background-attachment: fixed;
   background-size: cover;
 }
-body.about{
+body.about,body.conect{
   border: none;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
 }
-
-body.conect{
-  border: none;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-
-}
-
 nav{
-
   position: fixed;
   right: 3%;
 padding: 1.5vw; 
@@ -32,7 +23,7 @@ padding: 1.5vw;
 button:hover{
 
 background-color: rgba(255, 255, 255, 0.1);
-border: white;
+border: 1px solid white;
 border-width: 1vw;
 }
 header {
@@ -65,8 +56,8 @@ font-weight: 600;
   top: 50%;                 
   left: 50%;      
   transform: translate(-50%, -50%); 
-  width: 900px;
-  height: 800px;
+  width: 90%;
+    height: 80%;
   border: none;
   border-radius: 20px;
 }
@@ -78,6 +69,7 @@ font-weight: 600;
   inset: 0; 
   display: none;
 }
+
 
 
 
