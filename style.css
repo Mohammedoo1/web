@@ -21,8 +21,8 @@ padding: 1.5vw;
 
 }
 button:hover{
-
 background-color: rgba(255, 255, 255, 0.1);
+
 }
 header {
   font-weight: 600;
@@ -48,6 +48,8 @@ font-weight: 600;
   font-family: Arial;
   border: none;
   background-color: transparent ;
+    padding: 15px;
+
 
 }#content {
   position: fixed;          
@@ -68,6 +70,7 @@ font-weight: 600;
   display: none;
   z-index:5;
 }
+
 
 
 
