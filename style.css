@@ -68,7 +68,9 @@ font-weight: 600;
   backdrop-filter: blur(6px);
   inset: 0; 
   display: none;
+  z-index:5;
 }
+
 
 
 
