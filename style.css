@@ -60,6 +60,8 @@ padding: 1.5vw;
     height: 70%;
   border: none;
   border-radius: 20px;
+    z-index:10;
+
 }
 #color{
   background-color: rgba(0, 0 ,0 ,0.4);
@@ -70,6 +72,7 @@ padding: 1.5vw;
   display: none;
   z-index:1;
 }
+
 
 
 
