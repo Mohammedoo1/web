@@ -8,8 +8,6 @@ body.Home {
    url("c1Yx4P.webp");
   background-attachment: fixed;
   background-size: cover;
-
-
 }
 body.about{
   border: none;
@@ -27,7 +25,7 @@ body.conect{
 nav{
 
   position: fixed;
-  right: 40px;
+  right: 7%;
   padding: 15px;
 
 }
@@ -87,3 +85,4 @@ font-weight: 600;
 
      
 }
+
