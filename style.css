@@ -65,9 +65,8 @@ button:hover{
 background-color: rgba(255, 255, 255, 0.1);
 
 }
-.h{
+.h2{
     color: white;
-
 padding: 1.5vw; 
   padding-left:3%;}
 header {
@@ -118,6 +117,7 @@ padding: 1.5vw;
   display: none;
   z-index:1;
 }
+
 
 
 
