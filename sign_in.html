@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<head>
+  <style> 
+  body{
+    background-image: url(simple-space-wallpaper-3840x2160-deep-space-night-sky-26295.jpg);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+    div{
+      border:none;
+      position: fixed;
+  top: 50%;                  /* منتصف الصفحة عموديًا */
+    left: 50%;                 /* منتصف الصفحة أفقيًا */
+    transform: translate(-50%, -50%); /* يحرك العنصر ليكون منتصفه بالضبط */
+    width: 10%;
+height: 10%;
+ padding: 15%;     
+  border-radius: 100px;          /* زوايا مدورة → أنيق */
+background-color: rgba(0, 0, 0,0.3);  
+backdrop-filter: blur(1px);
+
+
+}
+p{
+   top: 37%;                  /* منتصف الصفحة عموديًا */
+    left: 51%;
+    transform: translate(-50%, -50%);
+  position: fixed;
+  margin-bottom: 2%;
+  
+}
+
+button {
+font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: medium;
+  color: white;
+  font-family: Arial;
+  border: none;
+  background-color: transparent ;
+padding: 1vw; 
+
+
+}
+.inEm {
+  width: 100%;                 
+  padding: 7% 6%;      
+  margin: 2% 0; 
+  border-radius: 30px;        
+  border: 3px solid #271b8f;     
+  background-color: rgba(0, 0, 0, 0); 
+  font-size: 16px;
+  color: white;
+}
+
+
+button:hover{
+background-color: rgba(0, 0, 0, 0.1);
+
+}
+.bu{
+  margin-top:6%;
+}
+  </style>
+  <meta charset="UTF-8">
+  <title>sign/log in </title>
+</head>
+<body>
+  <center>
+    
+  <div>
+<P>Enter your emaile :</P>
+
+<input class="inEm"id="email" type="email" placeholder="example@gmail.com" required> 
+
+<button class="bu"  onclick="login()">Next</button>
+</div>
+
+</center>
+<script src="https://cdn.jsdelivr.net/npm/magic-sdk/dist/magic.min.js"></script>
+<script>
+  const magic = new Magic("pk_live_466E715150E36619"); 
+
+  async function login() {
+
+    const email = document.getElementById("email").value;
+    if (!email)
+     {  alert("Email is required");
+}
+   else if  (!email.includes("@")) {
+   alert("Enter real email "); }
+   else {
+    await magic.auth.loginWithMagicLink({ email });
+    window.location.href = "index.html"; }
+  }
+</script>
+
+</body>
+</html>
