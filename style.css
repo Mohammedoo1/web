@@ -1,55 +1,51 @@
 body {
-  margin: 0;
+    margin: 0;
+
   background: black;
-  color:white;
-    font-family: Arial;
+  color: white;
 }
-
-.base {
-  position: fixed;
-  inset: 0;
-  background-image: url('A-peaceful-scene-of-a-rainbow-hued-planet-orbiting-in-HD-Space-wallpaper-1080p-with-colorful-rings-and-distant-stars-providing-a-beautiful-cosmic-backdrop.jpg');
-  background-size: cover;
-  background-position: center;
-  z-index: -2;
+ .div{
+           
+animation: slid 30s linear infinite ;
+       position: fixed;
+       inset: 0;
+       z-index: -1;
+       background-size: cover !important;
+       width: 100vw;
+       height: 100vh;   
+       background-repeat: no-repeat; 
+       background-position: center ;
+       background-attachment: fixed;
 }
-
-.bg {
-  position: fixed;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  opacity: 0;
-  animation: fade 24s infinite linear;
-}
-
-.bg1 {
-  background-image: url('A-peaceful-scene-of-a-rainbow-hued-planet-orbiting-in-HD-Space-wallpaper-1080p-with-colorful-rings-and-distant-stars-providing-a-beautiful-cosmic-backdrop.jpg');
-  animation-delay: 0s;
-}
-
-.bg2 {
-  background-image: url('simple-space-wallpaper-1920x1080-starlit-heavens-universe-26273.jpg');
-  animation-delay: 6s;
-}
-
-.bg3 {
-  background-image: url('Dark-.webp');
-  animation-delay: 12s;
-}
-
-.bg4 {
-  background-image: url('c1Yx4P.webp');
-  animation-delay: 18s;
-}
-
-@keyframes fade {
-  0%   { opacity: 0; }
-  15%  { opacity: 1; }
-  40%  { opacity: 1; }
-  55%  { opacity: 0; }
-  100% { opacity: 0; }
+@keyframes slid {
+    0% {
+        background-image: url('A-peaceful-scene-of-a-rainbow-hued-planet-orbiting-in-HD-Space-wallpaper-1080p-with-colorful-rings-and-distant-stars-providing-a-beautiful-cosmic-backdrop.jpg');
+    }
+    20% {
+        background-image: url('A-peaceful-scene-of-a-rainbow-hued-planet-orbiting-in-HD-Space-wallpaper-1080p-with-colorful-rings-and-distant-stars-providing-a-beautiful-cosmic-backdrop.jpg');
+    }
+    
+    25% {
+        background-image: url('simple-space-wallpaper-1920x1080-starlit-heavens-universe-26273.jpg');
+    } 
+    45% {
+        background-image: url('simple-space-wallpaper-1920x1080-starlit-heavens-universe-26273.jpg');
+    }
+  
+    50% {
+        background-image: url('Dark-.webp');
+    }
+    70% {
+        background-image: url('Dark-.webp');
+    }
+    75% {
+        background-image: url('c1Yx4P.webp');
+    }
+    95% {
+        background-image: url('c1Yx4P.webp');
+    } 100% {
+        background-image: url('A-peaceful-scene-of-a-rainbow-hued-planet-orbiting-in-HD-Space-wallpaper-1080p-with-colorful-rings-and-distant-stars-providing-a-beautiful-cosmic-backdrop.jpg');
+    }
 }
 
 body.about,body.conect{
@@ -118,6 +114,7 @@ padding: 1.5vw;
   display: none;
   z-index:1;
 }
+
 
 
 
