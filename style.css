@@ -1,6 +1,9 @@
 body {
   margin: 0;
   background: black;
+  color:white;
+    font-family: Arial;
+
 }
 
 .base {
@@ -66,7 +69,6 @@ background-color: rgba(255, 255, 255, 0.1);
 
 }
 .h2{
-    color: white;
 padding: 1.5vw; 
   padding-left:3%;}
 header {
@@ -117,6 +119,7 @@ padding: 1.5vw;
   display: none;
   z-index:1;
 }
+
 
 
 
