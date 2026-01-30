@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,25 @@
 </head>
 
 <body class="conect">
+<p>
+  Have a question or want to collaborate? We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.
 
-   <form id="contact-form">
-  <input type="text" name="name" id="name" placeholder="اسمك" required>
-  <input type="email" name="email" id="email" placeholder="بريدك" required>
-  <input type="text" name="title" id="title" placeholder="عنوان الرسالة" required>
-  <textarea name="message" id="message" placeholder="رسالتك" required></textarea>
-  <button type="button" onclick="
+</p>
+    <p> NAME</p>
 
- sendemail ()
-  ">Submit</button>
+   <form id="contact-form" onsubmit=" sendemail ()">
+  <input type="text" name="name" id="name" 
+  placeholder="Your name " required>
+    <p> EMAIL</p>
+
+  <input type="email" name="email" id="email" placeholder="email@gmail.com" required>
+      <p> SUBJECT</p>
+
+  <input type="text" name="title" id="title" placeholder="What's this about?" required>
+      <p> MESSAGE</p>
+
+  <textarea name="message" id="message" placeholder="Tell us more..." required></textarea>
+  <button type="submit" >Submit</button>
 </form>
 <button class="cl" onclick=
       "parent.closeIframe()">✖
@@ -45,8 +55,9 @@ function sendemail () {
     message : document.getElementById("message").value,
 
 }
-emailjs.send("service_0rl8snl", "template_ozvgg22", info).then (alert("تم الارسال"))
+emailjs.send("service_0rl8snl", "template_ozvgg22", info).then (alert("Sent successfully! \n Thanks for reaching out, We'll get back to you soon"))
 }
 </script>
 
 </body>
+</html>
