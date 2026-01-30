@@ -51,10 +51,27 @@ animation: slid 30s linear infinite ;
 
 
 
+
 body.about,body.conect{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: large;
   border: none;
-  background-color: rgba(0, 0, 0, 0.3);
+  line-height: 1.8;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 7% 20%;
 }
+input ,textarea{
+  
+  width: 100%;                 
+  padding: 7% 6%;      
+  margin: 2% 0; 
+  border-radius: 30px;        
+  background-color: rgba(59, 52, 152, 0.393); 
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
 nav{
   position: fixed;
   right: 3%;
@@ -117,6 +134,7 @@ padding: 1.5vw;
   display: none;
   z-index:1;
 }
+
 
 
 
