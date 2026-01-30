@@ -21,15 +21,19 @@
       localStorage.clear();
 
       location.reload();}">sign out</button>
-
+      <button id="art" onclick="window.location.href ='articls.html' ">Articals</button>
      <script>if (localStorage.getItem("signin")==="true"){
       document.getElementById("sign").style.display="none";
             document.getElementById("signout").style.display= "inline-block"; 
+             document.getElementById("art").style.display= "inline-block"; 
+
      }
 
 else if(localStorage.getItem("signin")===null){
       document.getElementById("sign").style.display= "inline-block"; 
             document.getElementById("signout").style.display="none";
+             document.getElementById("art").style.display="none";
+
 }
 </script>
 
@@ -75,3 +79,4 @@ images.forEach(src => {
   
   </script>
 </body>
+
