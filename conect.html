@@ -46,7 +46,7 @@
       });
    })();
 
-   
+
 function sendemail () {
     let info={
     name : document.getElementById("name").value,
@@ -55,9 +55,12 @@ function sendemail () {
     message : document.getElementById("message").value,
 
 }
+           if (localStorage.getItem("signin")==="true"){
+
 emailjs.send("service_0rl8snl", "template_ozvgg22", info).then (alert("Sent successfully! \n Thanks for reaching out, We'll get back to you soon"))
 }
+else
+{alert("You can't send without sign in \n Pleas sign in the website first")}}
 </script>
 
 </body>
-</html>
