@@ -5,8 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
-<head>
   <style> 
   body{
     background-image: url('simple-space-wallpaper-3840x2160-deep-space-night-sky-26295.jpg');
@@ -102,20 +100,19 @@ background-color: rgba(0, 0, 0, 0.1);
    else {    alert('Pleas wite a secend');
 
     await magic.auth.loginWithMagicLink({ email });
+        localStorage.setItem("signin","true")
+
     window.location.href = "index.html"; 
-    localStorage.setItem("signin","true")
   }
 
   }
-
-    async function Islogin() {
-
-  const logged = await magic.user.isLoggedIn();
-if(logged==="true"){
-      location.href="index.html"
-    }    }
- Islogin();   
-</script>
+  
+  function cheak() {  
+        if (localStorage.getItem("signin")==="true"){
+          window.location.href = "index.html"; 
+        }}
+ cheak();
+ </script>
 
 </body>
 </html>
