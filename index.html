@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ 
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>my web</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
  <link rel="icon" href="space icon.png">
- 
-     <script type="module">
- import {isLoggedIn} from "sign_in.html";
-
-      if (!isLoggedIn) {
-         document.getElementById("sign").style.display= "inline-block"; 
-            document.getElementById("signout").style.display="none";
-                        document.getElementById("about").style.display="none";
-    }
-    else if(isLoggedIn)
-{
-      document.getElementById("sign").style.display="none";
-            document.getElementById("about").style.display="inline-block";
-
-            document.getElementById("signout").style.display= "inline-block"; 
-     }
-
-</script>
 </head>  
 <body class="Home">
   <header>
 
     <nav>
       <button onclick="showPage('about.html')">About</button>
-      <button id="about" onclick="showPage('conect.html')">Contact</button>
+      <button onclick="showPage('conect.html')">Contact</button>
       <button id="sign" onclick="window.location.href ='sign_in.html' ">sign/login</button>
-      <button id="signout" onclick="const insure= confirm('are you sure?');if(insure) {localStorage.clear();}
-      location.reload();">sign out</button>
+      <button id="signout" onclick=" const insure=confirm('Are you sure you want to log out?')
+       if (insure){
+      localStorage.clear();
+
+      location.reload();}">sign out</button>
+
+     <script>if (localStorage.getItem("signin")==="true"){
+      document.getElementById("sign").style.display="none";
+            document.getElementById("signout").style.display= "inline-block"; 
+     }
+
+else if(localStorage.getItem("signin")===null){
+      document.getElementById("sign").style.display= "inline-block"; 
+            document.getElementById("signout").style.display="none";
+}
+</script>
+
+
 
    </nav>
    <div class="div"></div>
     <h2 class="h">Space World</h2> 
-
   </header>
   <iframe id="content"></iframe>
 <div id="color"></div>
@@ -77,4 +75,3 @@ images.forEach(src => {
   
   </script>
 </body>
-</html>
