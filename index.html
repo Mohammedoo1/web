@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="space icon.png">
-
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>world of space</title>
+  <title>my web</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+ <link rel="icon" href="space icon.png">
+ 
+     <script type="module">
+ import {isLoggedIn} from "sign_in.html";
+
+      if (!isLoggedIn) {
+         document.getElementById("sign").style.display= "inline-block"; 
+            document.getElementById("signout").style.display="none";
+                        document.getElementById("about").style.display="none";
+    }
+    else if(isLoggedIn)
+{
+      document.getElementById("sign").style.display="none";
+            document.getElementById("about").style.display="inline-block";
+
+            document.getElementById("signout").style.display= "inline-block"; 
+     }
+
+</script>
 </head>  
 <body class="Home">
   <header>
-
 
     <nav>
       <button onclick="showPage('about.html')">About</button>
@@ -19,33 +36,14 @@
       <button id="signout" onclick="const insure= confirm('are you sure?');if(insure) {localStorage.clear();}
       location.reload();">sign out</button>
 
-     <script>if (localStorage.getItem("signin")==="true"){
-      document.getElementById("sign").style.display="none";
-            document.getElementById("about").style.display="inline-block";
-
-            document.getElementById("signout").style.display= "inline-block"; 
-     }
-
-else {
-      document.getElementById("sign").style.display= "inline-block"; 
-            document.getElementById("signout").style.display="none";
-                        document.getElementById("about").style.display="none";
-
-}
-</script>
-
-
    </nav>
-
-   
-
+   <div class="div"></div>
     <h2 class="h">Space World</h2> 
+
   </header>
   <iframe id="content"></iframe>
 <div id="color"></div>
-
-<div class="div"></div>
-  <script>
+<script>
 const images = [
   'A-peaceful-scene-of-a-rainbow-hued-planet-orbiting-in-HD-Space-wallpaper-1080p-with-colorful-rings-and-distant-stars-providing-a-beautiful-cosmic-backdrop.jpg',
   'simple-space-wallpaper-1920x1080-starlit-heavens-universe-26273.jpg',
@@ -59,6 +57,7 @@ images.forEach(src => {
   img.src = src;
 });
 </script>
+
   <script>
         document.getElementById("content").style.display = "none";
 
@@ -78,16 +77,4 @@ images.forEach(src => {
   
   </script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>
