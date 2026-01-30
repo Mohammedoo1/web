@@ -1,14 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-</head>
-<body>
-  
-</body>
-</html>
+
 <head>
   <style> 
   body{
@@ -85,18 +82,17 @@ background-color: rgba(0, 0, 0, 0.1);
 
 <input class="inEm" id="email" type="email" placeholder="example@gmail.com" required> 
 
+
 <button class="bu"  onclick="login()">Next</button>
 </div>
 
 </center>
 <script src="https://cdn.jsdelivr.net/npm/magic-sdk/dist/magic.min.js"></script>
-     <script type="module">
+     <script>
+    const magic = new Magic("pk_live_466E715150E36619"); 
 
-  const magic = new Magic("pk_live_466E715150E36619"); 
-
-  async function login() {
-   export const isLoggedIn = await magic.user.isLoggedIn();
-
+    async function login() {
+ 
     const email = document.getElementById("email").value;
     if (!email)
      {  alert("Email is required");
@@ -109,7 +105,16 @@ background-color: rgba(0, 0, 0, 0.1);
     window.location.href = "index.html"; 
     localStorage.setItem("signin","true")
   }
+
   }
+
+    async function Islogin() {
+
+  const logged = await magic.user.isLoggedIn();
+if(logged==="true"){
+      location.href="index.html"
+    }    }
+ Islogin();   
 </script>
 
 </body>
