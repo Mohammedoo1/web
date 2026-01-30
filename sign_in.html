@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sign/log in</title>
+  <title>Document</title>
 </head>
 <body>
   
@@ -12,7 +12,7 @@
 <head>
   <style> 
   body{
-    background-image: url(simple-space-wallpaper-3840x2160-deep-space-night-sky-26295.jpg);
+    background-image: url('simple-space-wallpaper-3840x2160-deep-space-night-sky-26295.jpg');
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -20,9 +20,9 @@
     div{
       border:none;
       position: fixed;
-  top: 50%;                
-    left: 50%;         
-    transform: translate(-50%, -50%);
+  top: 50%;           
+    left: 50%;                
+    transform: translate(-50%, -50%); 
     width: 10%;
 height: 10%;
  padding: 15%;     
@@ -33,7 +33,7 @@ backdrop-filter: blur(1px);
 
 }
 p{
-   top: 37%;               
+   top: 37%;             
     left: 51%;
     transform: translate(-50%, -50%);
   position: fixed;
@@ -83,17 +83,19 @@ background-color: rgba(0, 0, 0, 0.1);
   <div>
 <P>Enter your emaile :</P>
 
-<input class="inEm"id="email" type="email" placeholder="example@gmail.com" required> 
+<input class="inEm" id="email" type="email" placeholder="example@gmail.com" required> 
 
 <button class="bu"  onclick="login()">Next</button>
 </div>
 
 </center>
 <script src="https://cdn.jsdelivr.net/npm/magic-sdk/dist/magic.min.js"></script>
-<script>
+     <script type="module">
+
   const magic = new Magic("pk_live_466E715150E36619"); 
 
   async function login() {
+   export const isLoggedIn = await magic.user.isLoggedIn();
 
     const email = document.getElementById("email").value;
     if (!email)
@@ -101,15 +103,14 @@ background-color: rgba(0, 0, 0, 0.1);
 }
    else if  (!email.includes("@")) {
    alert("Enter real email "); }
-   else {
-         alert('Pleas wite a secend');
+   else {    alert('Pleas wite a secend');
+
     await magic.auth.loginWithMagicLink({ email });
-    window.location.href = "index.html"; }
+    window.location.href = "index.html"; 
+    localStorage.setItem("signin","true")
+  }
   }
 </script>
 
 </body>
-
 </html>
-
-
