@@ -20,32 +20,32 @@ animation: slid 30s linear infinite ;
 
 @keyframes slid {
  0% {
-        background-image: url('A-peaceful-scene-of-a-rainbow-hued-planet-orbiting-in-HD-Space-wallpaper-1080p-with-colorful-rings-and-distant-stars-providing-a-beautiful-cosmic-backdrop.jpg');
+        background-image: url('/images/A-peaceful-scene-of-a-rainbow-hued-planet-orbiting-in-HD-Space-wallpaper-1080p-with-colorful-rings-and-distant-stars-providing-a-beautiful-cosmic-backdrop.jpg');
     }
     20% {
-        background-image: url('A-peaceful-scene-of-a-rainbow-hued-planet-orbiting-in-HD-Space-wallpaper-1080p-with-colorful-rings-and-distant-stars-providing-a-beautiful-cosmic-backdrop.jpg');
+        background-image: url('/images/A-peaceful-scene-of-a-rainbow-hued-planet-orbiting-in-HD-Space-wallpaper-1080p-with-colorful-rings-and-distant-stars-providing-a-beautiful-cosmic-backdrop.jpg');
     }
     
     25% {
-        background-image: url('simple-space-wallpaper-1920x1080-starlit-heavens-universe-26273.jpg');
+        background-image: url('/images/simple-space-wallpaper-1920x1080-starlit-heavens-universe-26273.jpg');
     } 
     45% {
-        background-image: url('simple-space-wallpaper-1920x1080-starlit-heavens-universe-26273.jpg');
+        background-image: url('/images/simple-space-wallpaper-1920x1080-starlit-heavens-universe-26273.jpg');
     }
   
     50% {
-        background-image: url('Dark-.webp');
+        background-image: url('/images/Dark-.webp');
     }
     70% {
-        background-image: url('Dark-.webp');
+        background-image: url('/images/Dark-.webp');
     }
     75% {
-        background-image: url('c1Yx4P.webp');
+        background-image: url('/images/c1Yx4P.webp');
     }
     95% {
-        background-image: url('c1Yx4P.webp');
+        background-image: url('/images/c1Yx4P.webp');
     } 100% {
-        background-image: url('A-peaceful-scene-of-a-rainbow-hued-planet-orbiting-in-HD-Space-wallpaper-1080p-with-colorful-rings-and-distant-stars-providing-a-beautiful-cosmic-backdrop.jpg');
+        background-image: url('/images/A-peaceful-scene-of-a-rainbow-hued-planet-orbiting-in-HD-Space-wallpaper-1080p-with-colorful-rings-and-distant-stars-providing-a-beautiful-cosmic-backdrop.jpg');
     }
 }
 
@@ -134,6 +134,7 @@ padding: 1.5vw;
   display: none;
   z-index:1;
 }
+
 
 
 
