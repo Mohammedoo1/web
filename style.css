@@ -34,10 +34,10 @@ animation: slid 30s linear infinite ;
     }
   
     50% {
-        background-image: url('images/Dark-.webp');
+        background-image: url('images/simple-space-wallpaper-3840x2160-deep-space-night-sky-26295.jpg');
     }
     70% {
-        background-image: url('images/Dark-.webp');
+        background-image: url('images/simple-space-wallpaper-3840x2160-deep-space-night-sky-26295.jpg');
     }
     75% {
         background-image: url('images/c1Yx4P.webp');
@@ -134,6 +134,7 @@ padding: 1.5vw;
   display: none;
   z-index:1;
 }
+
 
 
 
