@@ -94,6 +94,12 @@ padding: 1vw;
 }
 
 
+ @media (max-width: 768px) {
+  #content {
+  width: 50%;
+    height: 70%;
+
+  }}
 .cl{
   position: fixed;
   right: 10px;
@@ -134,6 +140,7 @@ padding: 1.5vw;
   display: none;
   z-index:1;
 }
+
 
 
 
