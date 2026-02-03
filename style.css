@@ -96,7 +96,7 @@ padding: 1vw;
 
  @media (max-width: 768px) {
   #content {
-  width: 80%%;
+  width: 80%;
     height: 80%;
 
   }}
@@ -140,6 +140,7 @@ padding: 1.5vw;
   display: none;
   z-index:1;
 }
+
 
 
 
