@@ -94,12 +94,7 @@ padding: 1vw;
 }
 
 
- @media (max-width: 1000px) {
-  #content {
-  width: 90%;
-    height: 85%;
-
-  }}
+ 
 .cl{
   position: fixed;
   right: 10px;
@@ -131,6 +126,12 @@ padding: 1.5vw;
     z-index:10;
 
 }
+@media (max-width: 1000px) {
+  #content {
+  width: 90%;
+    height: 85%;
+
+  }}
 #color{
   background-color: rgba(0, 0 ,0 ,0.4);
   position: fixed;
@@ -140,6 +141,7 @@ padding: 1.5vw;
   display: none;
   z-index:1;
 }
+
 
 
 
