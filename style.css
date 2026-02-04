@@ -52,7 +52,7 @@ animation: slid 30s linear infinite ;
 
 
 
-body.about,body.conect{
+body.about,body.contact{
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: large;
   border: none;
@@ -141,6 +141,7 @@ padding: 1.5vw;
   display: none;
   z-index:1;
 }
+
 
 
 
