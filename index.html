@@ -14,7 +14,7 @@
     <nav>
       <button onclick="location.href='articles.html'">Articls</button>
       <button onclick="showPage('about.html')">About</button>
-      <button onclick="showPage('conect.html')">Contact</button>
+      <button onclick="showPage('contact.html')">Contact</button>
       <button id="sign" onclick="window.location.href ='sign_in.html' ">sign/login</button>
       <button id="signout" onclick=" const insure=confirm('Are you sure you want to log out?')
        if (insure){
@@ -57,10 +57,10 @@ images.forEach(src => {
 </script>
 
   <script>
-        document.getElementById("content").style.display = "none";
+        document.getElementById("contact").style.display = "none";
 
     function showPage(page) {
-      const frame = document.getElementById('content'); 
+      const frame = document.getElementById('contact'); 
     frame.src = page;
     frame.style.display = "block"; 
     const col=document.getElementById("color").style.display="block";
@@ -68,13 +68,14 @@ images.forEach(src => {
     }
     
    function closeIframe() {
-    document.getElementById("content").style.display = "none";
+    document.getElementById("contact").style.display = "none";
     document.getElementById("color").style.display = "none";
 
   }
   
   </script>
 </body>
+
 
 
 
